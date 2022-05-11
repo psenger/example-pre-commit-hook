@@ -1,0 +1,27 @@
+{
+  "name": "example-pre-commit-hook",
+  "version": "1.0.0",
+  "description": "example-pre-commit-hook",
+  "main": "index.js",
+  "scripts": {
+    "test": "./scripts/validate-hashcode.js ./a/test.txt ./b/test.txt"
+  },
+  "pre-commit": {
+    "run": [
+      "test"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psenger/example-pre-commit-hook.git"
+  },
+  "author": "Philip A Senger <philip.a.senger@cngrgroup.com> (https://github.com/psenger)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psenger/example-pre-commit-hook/issues"
+  },
+  "homepage": "https://github.com/psenger/example-pre-commit-hook#readme",
+  "dependencies": {
+    "pre-commit": "^1.2.2"
+  }
+}
